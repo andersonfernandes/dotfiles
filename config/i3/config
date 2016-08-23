@@ -2,32 +2,31 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+### Mod keys ###
 set $mod Mod4
+floating_modifier $mod
 
-# Base Colors
+### Base Colors ###
 set $bg-color #2b2b2b
 set $text-color #f3f4f5
 set $inactive-bg-color #888888
 set $inactive-text-color #060910
 set $urgent-bg-color #E53935
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+### Font for window titles. ###
 font pango:System San Francisco Display 8
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
-# start a terminal
+### start a terminal ###
 bindsym $mod+Return exec i3-sensible-terminal
 
-# kill focused window
+### kill focused window ###
 bindsym $mod+Shift+q kill
 
+### Rofi ###
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
+bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 18"
 
-# change focus
+#### change focus ###
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
@@ -87,7 +86,6 @@ bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -99,7 +97,6 @@ bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -109,11 +106,11 @@ bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-# bindsym $mod+Shift+e exec ~/.scripts/i3wm-off.sh
+# bindsym $mod+Shift+e exec ~/.config/i3/i3-exit
 
-bindsym $mod+Shift+e 	mode $session
+bindsym $mod+Shift+e 	mode session
 
-mode $session	 {
+mode session	 {
     bindsym l         exit			 # Logout
     bindsym p         exec shutdown -P now	 # Poweroff
     bindsym r         exec shutdown -r now	 # Restart
@@ -160,8 +157,11 @@ hide_edge_borders both
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        tray_output primary
+        # status_command i3blocks -c ~/.config/i3/i3blocks.conf
+	status_command conky -c ~/.config/i3/conkyrc
+        mode dock
+	position top
+	strip_workspace_numbers yes
 	colors {
 		background $bg-color
 		separator #757575
@@ -170,7 +170,6 @@ bar {
 		inactive_workspace $bg-color $bg-color $text-color
 		urgent_workspace $urgent-bg-color $urgent-bg-color $text-color
 	}
-	position top
 }
 
 # i3lock keybind
@@ -193,6 +192,9 @@ bindsym Ctrl+Next exec playerctl previous
 
 # Wallpaper
 exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg
+
+# Touchpad horizontal scrolling
+exec --no-startup-id xinput --set-prop 13 "Synaptics Two-Finger Scrolling" 1 1
 
 # Start compton at startup
 exec --no-startup-id compton -f
