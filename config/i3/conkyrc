@@ -1,0 +1,16 @@
+background no
+out_to_x no
+out_to_console yes
+update_interval 1
+total_run_times 0
+use_spacer none
+
+TEXT
+
+♬  ${exec echo "$(playerctl metadata title) - $(playerctl metadata artist)"}  |   \
+  ${wireless_essid wlp2s0}     \
+  ${uptime_short}     \
+${exec ~/.scripts/battery.sh}    \
+🎧  ${exec echo "$(amixer -D pulse get Master | grep "Front Left" | grep -o '[0-9]*%' | grep -o '[0-9]*')%"}     \
+  ${time %a %b %d}    \
+🕑  ${time %H:%M}
