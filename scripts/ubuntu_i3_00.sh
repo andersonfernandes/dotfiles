@@ -28,7 +28,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 sudo chsh -s $(which zsh)
 
 printf "\n\nThat's it. All the basic things are installed!\n"
-printf "Restart the system and execute the next script to finish the instalation.\n"
+printf "Restart the system and execute the next script(ubuntu_i3_01.sh) to finish the instalation.\n"
 printf "Press [ENTER] to restart."
 read
 
