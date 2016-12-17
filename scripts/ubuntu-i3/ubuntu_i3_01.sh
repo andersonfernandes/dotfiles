@@ -41,8 +41,10 @@ printf "\n\nInstalling multimedia applications\n\n"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
-sudo apt-get --yes --allow install spotify-client
-sudo apt-get --yes --allow install rhythmbox vlc
+
+sudo apt-get --yes --allow install ubuntu-restricted-extras alsa-base alsa-utils alsa-source alsamixergui pulseaudio
+sudo apt-get --yes --allow install spotify-client rhythmbox vlc deluge
+
 sudo apt -f install
 
 printf "\n\nNow everything is setup.\n"
