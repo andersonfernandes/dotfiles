@@ -23,9 +23,9 @@ printf "Press [ENTER] to continue."
 read
 
 printf "\n\nInstalling Numix Theme\n\n"
-sudo add-apt-repository --yes --force-yes ppa:numix/ppa
+sudo add-apt-repository --yes --allow ppa:numix/ppa
 sudo apt-get update
-sudo apt-get --yes --force-yes install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
+sudo apt-get --yes ----allow install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
 touch ~/.gtkrc-2.0.mine
 echo 'gtk-theme-name="Numix"' >> ~/.gtkrc-2.0.mine
 echo 'gtk-icon-theme-name="Numix-Circle"' >> ~/.gtkrc-2.0.mine
@@ -41,10 +41,9 @@ printf "\n\nInstalling multimedia applications\n\n"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
-sudo apt-get --yes --force-yes install spotify-client
-
-sudo apt-get --yes --force-yes install rhythmbox
-sudo apt-get --yes --force-yes install vlc
+sudo apt-get --yes --allow install spotify-client
+sudo apt-get --yes --allow install rhythmbox vlc
+sudo apt -f install
 
 printf "\n\nNow everything is setup.\n"
 printf "Restart the system and have fun! :D\n"
