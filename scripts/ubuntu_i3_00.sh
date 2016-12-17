@@ -30,7 +30,7 @@ printf "\n\nInstalling lightdm and graphical interface utils\n\n"
 sudo apt-get --yes --force-yes install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings x11-utils x11-xserver-utils xauth
 
 printf "\n\nInstalling first applications\n\n"
-sudo apt-get --yes --force-yes install thunar gnome-terminal pm-utils compton lxappearance feh zsh
+sudo apt-get --yes --force-yes install thunar gnome-terminal pm-utils compton lxappearance feh rofi conky zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 sudo chsh -s $(which zsh)
 
