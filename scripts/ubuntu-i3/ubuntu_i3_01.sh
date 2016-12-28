@@ -52,5 +52,5 @@ printf "Restart the system and have fun! :D\n"
 printf "Press [ENTER] to restart."
 read
 
-# sudo reboot
+sudo reboot
 
