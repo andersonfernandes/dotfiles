@@ -12,13 +12,11 @@ margin-top = 5
 margin-bottom = 5
 
 [bar/Bar]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
 offset-x = 0
 offset-y = 0
 
-;background = ${xrdb:color9}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -41,24 +39,23 @@ font-1 = unifont:size=6:heavy:fontformat=truetype;-2
 font-2 = FontAwesome:pixelsize=10;0
 
 modules-left = bspwm i3 xwindow
-modules-center = 
-modules-right = backlight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-center = music
+modules-right = backlight volume wlan battery temperature date
 
 tray-position = right
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
 
-;wm-restack = bspwm
-;wm-restack = i3
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
-;override-redirect = true
+[module/music]
+type = custom/script
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+exec = echo "$(playerctl metadata title) - $(playerctl metadata artist)"
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+tail = false
+label = ♬  %output%
+interval = 1
 
 [module/xwindow]
 type = internal/xwindow
@@ -135,7 +132,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
-format-disconnected-underline = ${self.format-connected-underline}
+format-disconnected-underline = ${colors.alert}
 
 label-connected =  %essid%
 label-disconnected = %ifname% disconnected
@@ -241,5 +238,3 @@ ramp-2 = 
 ramp-3 = 
 ramp-4 = 
 ramp-foreground = ${colors.foreground-alt}
-
-; vim:ft=dosini
