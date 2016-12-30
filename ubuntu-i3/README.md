@@ -4,6 +4,8 @@
 
 ### Instructions:
 
+-  Make a standard installation of the Ubuntu Server 16.04
+
 -  Download the scripts:
 
  ```
