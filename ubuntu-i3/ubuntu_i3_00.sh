@@ -20,17 +20,17 @@ printf "\n\n"
 
 printf "Updating the System . . .\n\n"
 sudo apt-get update 
-sudo apt-get --yes --allow upgrade
-sudo apt-get --yes --allow install build-essential
+sudo apt-get --yes --force-yes upgrade
+sudo apt-get --yes --force-yes install build-essential
 
 printf "\n\nInstalling i3-wm\n\n"
-sudo apt-get --yes --allow install i3 i3-wm
+sudo apt-get --yes --force-yes install i3 i3-wm
 
 printf "\n\nInstalling lightdm and graphical interface utils\n\n"
-sudo apt-get --yes --allow install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings x11-utils x11-xserver-utils xauth
+sudo apt-get --yes --force-yes install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings x11-utils x11-xserver-utils xauth
 
 printf "\n\nInstalling first applications\n\n"
-sudo apt-get --yes --allow install thunar gnome-terminal pm-utils compton lxappearance feh rofi conky zsh
+sudo apt-get --yes --force-yes install thunar gnome-terminal pm-utils compton lxappearance feh rofi zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 sudo chsh -s $(which zsh)
 
