@@ -6,18 +6,18 @@
   set $text-color #f3f4f5
   set $inactive-bg-color #888888
   set $inactive-text-color #060910
-  set $urgent-bg-color #E53935  
+  set $urgent-bg-color #E53935
 
   # Workspace names
-  set $workspace1 "1 1"
-  set $workspace2 "2 2"
-  set $workspace3 "3 3"
-  set $workspace4 "4 4"
-  set $workspace5 "5 5"
-  set $workspace6 "6 6"
-  set $workspace7 "7 7"
-  set $workspace8 "8 8"
-  set $workspace9 "9 9"
+  set $workspace1 "1"
+  set $workspace2 "2"
+  set $workspace3 "3"
+  set $workspace4 "4"
+  set $workspace5 "5"
+  set $workspace6 "6"
+  set $workspace7 "7"
+  set $workspace8 "8"
+  set $workspace9 "9"
 
   # Session Managment
   set $session S:  | P:  | R:  | E: 
@@ -32,7 +32,7 @@
   floating_modifier $mod
   focus_follows_mouse no
 
-  exec_always feh --bg-scale ~/.config/i3/wallpaper.png
+  exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg
   exec --no-startup-id nm-applet
   exec --no-startup-id xinput --set-prop 13 "Synaptics Two-Finger Scrolling" 1 1
   exec --no-startup-id compton -f
@@ -54,8 +54,8 @@
   bindsym XF86AudioMute exec amixer -D pulse set Master toggle # mute sound
 
   # Brightness
-  bindsym XF86MonBrightnessUp exec xbacklight -inc 6 # increase screen brightness
-  bindsym XF86MonBrightnessDown exec xbacklight -dec 6 # decrease screen brightness
+  bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+  bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
   # Media
   bindsym Ctrl+Up exec playerctl play-pause
@@ -96,7 +96,7 @@
   bindsym $mod+space focus mode_toggle
   bindsym $mod+a focus parent
   bindsym $mod+h split h
-  
+
   bindsym $mod+Shift+q kill
   bindsym $mod+r mode $resize
   mode $resize {
@@ -114,7 +114,7 @@
     bindsym Escape mode "default"
   }
 
-# Session managment bindings  
+# Session managment bindings
   bindsym $mod+Shift+e  mode $session
   mode "$session" {
       bindsym s exec --no-startup-id systemctl suspend -i, mode "default
@@ -155,12 +155,15 @@
 
 # Program bindings
   bindsym $mod+Return exec i3-sensible-terminal
-  bindsym $mod+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 18"
+  # bindsym $mod+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 18"
+
+  bindsym $mod+d exec rofi -show run -lines 1 -columns 3 -eh 2 -width 100 -location 6 -padding 10 -opacity 92 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 14" --no-generic
+
 
 # Bar
   bar {
     font xft:System San Francisco Display 8, FontAwesome 8
-    status_command polybar Bar 
+    status_command polybar Bar
     mode invisible
     position top
     strip_workspace_numbers yes

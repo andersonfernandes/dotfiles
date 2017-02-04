@@ -22,14 +22,14 @@ foreground = ${colors.foreground}
 
 overline-size = 2
 overline-color = #f00
-underline-size = 2
+underline-size = 1
 underline-color = #00f
 
-border-bottom = 2
+border-bottom = 1
 border-bottom-color = #333
 
 spacing = 1
-padding-left = 0
+padding-left = 2
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
@@ -40,7 +40,7 @@ font-2 = FontAwesome:pixelsize=10;0
 
 modules-left = bspwm i3 xwindow
 modules-center = music
-modules-right = backlight volume wlan battery temperature date
+modules-right = volume backlight wlan battery temperature date
 
 tray-position = right
 tray-padding = 2
@@ -71,15 +71,15 @@ label-focused-underline= ${colors.primary}
 label-focused-padding = 2.5
 
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 2.5
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 2.5
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 2.5
 
 [module/i3]
 type = internal/i3
@@ -115,13 +115,13 @@ format = <label> <bar>
 label = 
 
 bar-width = 10
-bar-indicator = │
+bar-indicator =
 bar-indicator-foreground = #ff
 bar-indicator-font = 2
-bar-fill = ─
+bar-fill = 
 bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
+bar-fill-foreground = #0a6cf5
+bar-empty = 
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
 
@@ -169,7 +169,7 @@ label-volume-foreground = ${root.foreground}
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
-bar-volume-width = 10
+bar-volume-width = 12
 bar-volume-foreground-0 = #55aa55
 bar-volume-foreground-1 = #55aa55
 bar-volume-foreground-2 = #55aa55
@@ -178,12 +178,11 @@ bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = │
-bar-volume-indicator-font = 2
+bar-volume-indicator =
 bar-volume-indicator-foreground = #ff
-bar-volume-fill = ─
+bar-volume-fill = 
 bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-empty = 
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
