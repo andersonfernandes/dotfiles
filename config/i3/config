@@ -20,7 +20,7 @@
   set $workspace9 "9"
 
   # Session Managment
-  set $session S:  | P:  | R:  | E: 
+  set $session S:  | P:  | R:  | E:  | X: 
 
   # Resize
   set $resize "  "
@@ -117,7 +117,8 @@
 # Session managment bindings
   bindsym $mod+Shift+e  mode $session
   mode "$session" {
-      bindsym s exec --no-startup-id systemctl suspend -i, mode "default
+      bindsym x exec --no-startup-id ~/.scripts/i3lock, mode "default
+      bindsym s exec --no-startup-id ~/.scripts/i3lock && systemctl suspend -i, mode "default
       bindsym p exec --no-startup-id systemctl poweroff -i, mode "default"
       bindsym r exec --no-startup-id systemctl reboot -i, mode "default"
       bindsym e exec --no-startup-id i3-msg exit, mode "default"
@@ -155,9 +156,9 @@
 
 # Program bindings
   bindsym $mod+Return exec i3-sensible-terminal
-  # bindsym $mod+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 18"
+  bindsym $mod+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 15"
 
-  bindsym $mod+d exec rofi -show run -lines 1 -columns 3 -eh 2 -width 100 -location 6 -padding 10 -opacity 92 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 14" --no-generic
+  #bindsym $mod+d exec rofi -show run -lines 1 -columns 3 -eh 2 -width 100 -location 6 -padding 10 -opacity 92 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 14" --no-generic
 
 
 # Bar

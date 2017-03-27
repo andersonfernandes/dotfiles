@@ -1,11 +1,11 @@
 [colors]
 background = #222
 background-alt = #444
-foreground = #dfdfdf
+foreground = #D4D4D4
 foreground-alt = #55
-primary = #E74E40
-secondary = #e60053
-alert = #bd2c40
+primary = #F58E8E
+secondary = #D6ADD5
+alert = #BA5151
 
 [global/wm]
 margin-top = 5
@@ -120,7 +120,7 @@ bar-indicator-foreground = #ff
 bar-indicator-font = 2
 bar-fill = 
 bar-fill-font = 2
-bar-fill-foreground = #0a6cf5
+bar-fill-foreground = #7AABD4
 bar-empty = 
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
@@ -131,7 +131,7 @@ interface = wlp2s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = #D6ADD5
 format-disconnected-underline = ${colors.alert}
 
 label-connected =  %essid%
@@ -155,7 +155,7 @@ time = %H:%M
 time-alt = %H:%M
 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+format-underline = #7AABD4
 
 label = %date% %time%
 
@@ -170,13 +170,13 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 12
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = #7FD283
+bar-volume-foreground-1 = #7FD283
+bar-volume-foreground-2 = #7FD283
+bar-volume-foreground-3 = #7FD283
+bar-volume-foreground-4 = #7FD283
+bar-volume-foreground-5 = #F7C96E
+bar-volume-foreground-6 = #F48888
 bar-volume-gradient = false
 bar-volume-indicator =
 bar-volume-indicator-foreground = #ff
@@ -193,7 +193,7 @@ adapter = ADP0
 full-at = 100
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = #FED37E
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -223,7 +223,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+format-underline = #F77575
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 

@@ -23,9 +23,9 @@ printf "Press [ENTER] to continue."
 read
 
 printf "\n\nInstalling Numix Theme\n\n"
-sudo add-apt-repository --yes --allow ppa:numix/ppa
+sudo add-apt-repository --yes ppa:numix/ppa
 sudo apt-get update
-sudo apt-get --yes ----allow install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
+sudo apt-get --yes install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
 touch ~/.gtkrc-2.0.mine
 echo 'gtk-theme-name="Numix"' >> ~/.gtkrc-2.0.mine
 echo 'gtk-icon-theme-name="Numix-Circle"' >> ~/.gtkrc-2.0.mine
@@ -42,8 +42,8 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB31
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get update
 
-sudo apt-get --yes --allow install ubuntu-restricted-extras alsa-base alsa-utils alsa-source alsamixergui pulseaudio
-sudo apt-get --yes --allow install spotify-client rhythmbox vlc deluge
+sudo apt-get --yes install ubuntu-restricted-extras alsa-base alsa-utils alsa-source alsamixergui pulseaudio
+sudo apt-get --yes install spotify-client rhythmbox vlc deluge
 
 sudo apt -f install
 
