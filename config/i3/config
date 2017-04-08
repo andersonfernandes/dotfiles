@@ -25,16 +25,15 @@
   # Resize
   set $resize "  "
 
-
 # General Configuration
   hide_edge_borders both
   font pango:System San Francisco Display 8
   floating_modifier $mod
   focus_follows_mouse no
 
-  exec_always feh --bg-scale ~/.config/i3/wallpaper.jpg
+  exec_always feh --bg-scale ~/.config/i3/wallpaper.png
   exec --no-startup-id nm-applet
-  exec --no-startup-id xinput --set-prop 13 "Synaptics Two-Finger Scrolling" 1 1
+	  exec --no-startup-id xinput --set-prop 13 "Synaptics Two-Finger Scrolling" 1 1
   exec --no-startup-id compton -f
 
   # Set Window colors
@@ -156,9 +155,7 @@
 
 # Program bindings
   bindsym $mod+Return exec i3-sensible-terminal
-  bindsym $mod+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 15"
-
-  #bindsym $mod+d exec rofi -show run -lines 1 -columns 3 -eh 2 -width 100 -location 6 -padding 10 -opacity 92 -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 14" --no-generic
+  bindsym $mod+d exec rofi -show run -lines 4 -eh 2 -width 100 -padding 300 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#E74E40" -font "System San Francisco Display 14"
 
 
 # Bar
