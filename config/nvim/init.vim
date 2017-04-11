@@ -27,7 +27,6 @@ call plug#end()
 "=General=
 set laststatus=2
 set number
-inoremap { {<CR>}<Esc>ko
 set modifiable
 
 "=Theme=
@@ -52,6 +51,9 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 nmap <leader>vs :vsplit<cr> 
 nmap <leader>hs :split<cr> 
+inoremap { {}<Esc>i
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
 
 "=Plugin Configs=
 
