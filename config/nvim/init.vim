@@ -87,9 +87,7 @@ nmap <leader>jsm :vsplit<cr> :Emodel<cr>
 let g:deoplete#enable_at_startup = 1
 
 " emmet-vim
-function! s:zen_html_tab()
-  return "\<c-y>,"
-endfunction
-autocmd FileType html imap <buffer><expr><tab> <sid>zen_html_tab()
-autocmd FileType eruby imap <buffer><expr><tab> <sid>zen_html_tab()
-autocmd FileType css imap <buffer><expr><tab><tab> <sid>zen_html_tab()
+autocmd FileType html imap <buffer><expr><tab> emmet#expandAbbrIntelligent("\<tab>")
+autocmd FileType eruby imap <buffer><expr><tab> emmet#expandAbbrIntelligent("\<tab>")
+autocmd FileType css imap <buffer><expr><tab><tab> emmet#expandAbbrIntelligent("\<tab>")
+
