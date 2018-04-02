@@ -1,40 +1,48 @@
-"=Plugins=
+"= Plugins =
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'kien/ctrlp.vim'
-Plug 'vim-gitgutter'
+Plug 'itchyny/lightline.vim'
+Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
-Plug 'mattn/emmet-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'honza/vim-snippets'
-Plug 'janko-m/vim-test'
-Plug 'garbas/vim-snipmate'
+Plug 'jiangmiao/auto-pairs'
+
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
+Plug 'janko-m/vim-test'
 
-Plug 'kchmck/vim-coffee-script'
-
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
-"=General=
-set laststatus=2
+"= General =
+set hidden
 set number
+set inccommand=split
+set nowrap
 set modifiable
+set colorcolumn=120
+set clipboard=unnamed
 
-"=Theme=
+"= Theme =
 syntax enable
 set background=dark
 colorscheme gruvbox
 
-"=Indentation=
+"= Indentation =
+filetype indent on
 set autoindent
 set smartindent
 set smarttab
@@ -43,51 +51,62 @@ set softtabstop=2
 set tabstop=2
 set expandtab
 
-"=Keys=
+"= Keys =
 let mapleader = ","
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-nmap <leader>vs :vsplit<cr> 
-nmap <leader>hs :split<cr> 
-inoremap { {}<Esc>i
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
+nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 
-"=Plugin Configs=
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-h> <c-w>h
+map <c-l> <c-w>l
 
-" NERDTree
-nmap <leader>ne :NERDTreeToggle<cr> 
-let NERDTreeShowHidden=1
+noremap <leader>vs :vsplit<cr>
+noremap <leader>hs :split<cr>
 
-" CtrlP
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_max_depth = 50
-let g:ctrlp_max_files = 100000
+noremap <leader>tn :tabnew<cr>
+noremap <leader>tl :tabnext<cr>
+noremap <leader>th :tabprevious<cr>
+noremap <leader>tq :tabclose<cr>
 
-" vim-airline
-let g:airline_theme='gruvbox'
+noremap <c-p> :Files<cr>
+noremap <c-f> :Ag<space>
+noremap <c-b> :Buffers<cr>
 
-" vim-test
-nmap <silent> <leader>t :TestFile<CR>
 
-" vim-ruby
-autocmd FileType ruby let g:rubycomplete_buffer_loading = 1 
-autocmd FileType ruby let g:rubycomplete_classes_in_global = 1
-autocmd FileType ruby let g:rubycomplete_rails = 1
+"= Plugins Configs =
 
-" vim-rails
-nmap <leader>jc :Econtroller<cr> 
-nmap <leader>jm :Emodel<cr> 
-nmap <leader>jsc :vsplit<cr> :Econtroller<cr> 
-nmap <leader>jsm :vsplit<cr> :Emodel<cr> 
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
-" emmet-vim
-autocmd FileType html imap <buffer><expr><tab> emmet#expandAbbrIntelligent("\<tab>")
-autocmd FileType eruby imap <buffer><expr><tab> emmet#expandAbbrIntelligent("\<tab>")
-autocmd FileType css imap <buffer><expr><tab><tab> emmet#expandAbbrIntelligent("\<tab>")
+" NERDTree
+nmap <leader>ne :NERDTreeToggle<cr>
+nmap <leader>nf :NERDTreeFind<cr>
+let NERDTreeShowHidden=1
 
+" vim-test
+nmap <silent> <leader>T :TestFile -strategy=neovim<CR>
+nmap <silent> <leader>lT :TestNearest<CR>
+
+" vim-ruby
+autocmd FileType ruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby let g:rubycomplete_rails = 1
+
+" vim-rails
+nmap <leader>jc :Econtroller<cr>
+nmap <leader>jm :Emodel<cr>
+nmap <leader>jsc :vsplit<cr> :Econtroller<cr>
+nmap <leader>jsm :vsplit<cr> :Emodel<cr>
