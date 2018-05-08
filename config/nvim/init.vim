@@ -13,6 +13,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+Plug 'w0rp/ale'
 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -22,8 +24,10 @@ Plug 'honza/vim-snippets'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'janko-m/vim-test'
+Plug 'ngmy/vim-rubocop'
 
 Plug 'mattn/emmet-vim'
+Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
 call plug#end()
 
@@ -73,8 +77,13 @@ noremap <c-p> :Files<cr>
 noremap <c-f> :Ag<space>
 noremap <c-b> :Buffers<cr>
 
+map <F2> :mksession! ~/.config/nvim/vim_session <cr>
+map <F3> :source ~/.config/nvim/vim_session <cr>
+
 
 "= Plugins Configs =
+
+" emmet
 
 " lightline
 let g:lightline = {
@@ -87,6 +96,15 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
+
+" vim-multiple-cursors
+function! Multiple_cursors_before()
+  exe 'call deoplete#toggle()'
+endfunction
+
+function! Multiple_cursors_after()
+  exe 'call deoplete#toggle()'
+endfunction
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
