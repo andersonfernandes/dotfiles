@@ -1,11 +1,15 @@
+
 "= Plugins =
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'ryanoasis/vim-devicons'
+
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'wakatime/vim-wakatime'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-multiple-cursors'
@@ -29,6 +33,8 @@ Plug 'ngmy/vim-rubocop'
 Plug 'mattn/emmet-vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
+
+Plug 'slashmili/alchemist.vim'
 call plug#end()
 
 "= General =
@@ -80,10 +86,7 @@ noremap <c-b> :Buffers<cr>
 map <F2> :mksession! ~/.config/nvim/vim_session <cr>
 map <F3> :source ~/.config/nvim/vim_session <cr>
 
-
 "= Plugins Configs =
-
-" emmet
 
 " lightline
 let g:lightline = {
@@ -93,9 +96,19 @@ let g:lightline = {
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
+      \   'gitbranch': 'fugitive#head',
+      \   'filetype': 'MyFiletype',
+      \   'fileformat': 'MyFileformat',
       \ },
       \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
 
 " vim-multiple-cursors
 function! Multiple_cursors_before()
@@ -126,5 +139,7 @@ autocmd FileType ruby let g:rubycomplete_rails = 1
 " vim-rails
 nmap <leader>jc :Econtroller<cr>
 nmap <leader>jm :Emodel<cr>
+nmap <leader>jv :Eview<cr>
 nmap <leader>jsc :vsplit<cr> :Econtroller<cr>
 nmap <leader>jsm :vsplit<cr> :Emodel<cr>
+nmap <leader>jsv :vsplit<cr> :Eview<cr>
