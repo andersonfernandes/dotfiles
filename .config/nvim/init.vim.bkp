@@ -1,15 +1,12 @@
-
 "= Plugins =
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'ryanoasis/vim-devicons'
-
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'wakatime/vim-wakatime'
+Plug 'w0rp/ale'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-multiple-cursors'
@@ -17,8 +14,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
@@ -31,10 +26,10 @@ Plug 'janko-m/vim-test'
 Plug 'ngmy/vim-rubocop'
 
 Plug 'mattn/emmet-vim'
-Plug 'kchmck/vim-coffee-script'
 Plug 'pangloss/vim-javascript'
 
 Plug 'slashmili/alchemist.vim'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 "= General =
@@ -83,8 +78,6 @@ noremap <c-p> :Files<cr>
 noremap <c-f> :Ag<space>
 noremap <c-b> :Buffers<cr>
 
-map <F2> :mksession! ~/.config/nvim/vim_session <cr>
-map <F3> :source ~/.config/nvim/vim_session <cr>
 
 "= Plugins Configs =
 
@@ -96,28 +89,9 @@ let g:lightline = {
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
+      \   'gitbranch': 'fugitive#head'
       \ },
       \ }
-
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
-
-" vim-multiple-cursors
-function! Multiple_cursors_before()
-  exe 'call deoplete#toggle()'
-endfunction
-
-function! Multiple_cursors_after()
-  exe 'call deoplete#toggle()'
-endfunction
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -139,7 +113,5 @@ autocmd FileType ruby let g:rubycomplete_rails = 1
 " vim-rails
 nmap <leader>jc :Econtroller<cr>
 nmap <leader>jm :Emodel<cr>
-nmap <leader>jv :Eview<cr>
 nmap <leader>jsc :vsplit<cr> :Econtroller<cr>
 nmap <leader>jsm :vsplit<cr> :Emodel<cr>
-nmap <leader>jsv :vsplit<cr> :Eview<cr>
