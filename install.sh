@@ -6,8 +6,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 echo "Installing oh my zsh"
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
-export ZSH_THEME=avit
-export TERM=screen-256color
 
 echo "Linking config files"
 ln -s ~/.dotfiles/.tmux.conf ~/
