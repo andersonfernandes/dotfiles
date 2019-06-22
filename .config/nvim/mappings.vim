@@ -15,6 +15,12 @@ noremap <leader>tl :tabnext<cr>
 noremap <leader>th :tabprevious<cr>
 noremap <leader>tq :tabclose<cr>
 
+" Finders
+noremap <leader>fC :Files app/controllers<cr>
+noremap <leader>fM :Files app/models<cr>
+noremap <leader>fR :Files app/repositories<cr>
+noremap <leader>fS :Files app/services<cr>
+
 " fzf.vim
 noremap <c-f> :Ag<space>
 noremap <c-p> :Files<cr>
