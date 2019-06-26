@@ -23,7 +23,20 @@ Run the install script:
 ./.dotfiles/install.sh
 ```
 
-If you have some issues after install, logout and login.
+## Update
+
+Pull the new version of the files:
+
+```bash
+cd ~/.dotfiles
+git pull origin master
+```
+
+Run the update script:
+
+```bash
+./.dotfiles/update.sh
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
