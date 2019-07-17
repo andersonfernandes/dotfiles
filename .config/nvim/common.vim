@@ -6,12 +6,12 @@ set modifiable
 set colorcolumn=120
 set clipboard=unnamed
 
-"= Theme =
+" Theme
 syntax enable
 set background=dark
 colorscheme gruvbox
 
-"= Indentation =
+" Indentation
 filetype indent on
 set autoindent
 set smartindent
@@ -20,3 +20,10 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+
+" Folding
+set foldmethod=indent
+augroup OpenAllFoldsOnFileOpen
+  autocmd!
+  autocmd BufRead * normal zR
+augroup END
