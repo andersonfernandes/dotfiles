@@ -9,7 +9,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 Plug 'tomtom/tcomment_vim'
-Plug 'terryma/vim-multiple-cursors'
 
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
