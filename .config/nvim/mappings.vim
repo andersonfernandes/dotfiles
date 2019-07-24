@@ -1,6 +1,6 @@
 let mapleader = ","
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
-nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>:call webdevicons#refresh()<cr>
 
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -29,3 +29,6 @@ noremap <c-b> :Buffers<cr>
 " NERDTree
 nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFind<cr>
+
+" LanguageClient-neovim
+nnoremap <leader>cm :call LanguageClient_contextMenu()<CR><Paste>
