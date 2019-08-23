@@ -37,9 +37,10 @@ RUN apt install -y neovim
 RUN curl -fLo /home/doe/.local/share/nvim/site/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-RUN useradd -p $(openssl passwd -1 123456) -m -d /home/doe doe
+RUN useradd -m -d /home/doe doe
 RUN usermod -aG sudo doe
 RUN chsh doe --shell /bin/zsh
+RUN echo '\n doe ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 RUN mkdir -p /home/doe/workspace/
 RUN mkdir -p /home/doe/.config/
@@ -61,10 +62,10 @@ RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.4
 RUN echo '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc
 RUN echo '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
 
-# RUN asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-# RUN asdf plugin-update --all
-# RUN asdf install ruby 2.6.3
-# RUN asdf global ruby 2.6.3
+RUN ./home/doe/.asdf/bin/asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+RUN ./home/doe/.asdf/bin/asdf plugin-update --all
+RUN sudo ./home/doe/.asdf/bin/asdf install ruby 2.6.3
+RUN ./home/doe/.asdf/bin/asdf global ruby 2.6.3
 
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
