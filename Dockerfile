@@ -61,6 +61,7 @@ RUN nvim +PlugInstall +qall > /dev/null
 RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.4
 RUN echo '\n. $HOME/.asdf/asdf.sh' >> ~/.zshrc
 RUN echo '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.zshrc
+RUN echo '\n legacy_version_file = yes' >> ~/.asdfrc
 
 RUN ./home/doe/.asdf/bin/asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 RUN ./home/doe/.asdf/bin/asdf plugin-update --all
