@@ -10,4 +10,6 @@ ln -s ~/.dotfiles/.config/nvim ~/.config/
 
 nvim +PlugInstall +qall > /dev/null
 
+cd ~/.fzf/ && ./install
+
 echo "Done!"
