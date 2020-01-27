@@ -20,10 +20,3 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-
-" Folding
-set foldmethod=indent
-augroup OpenAllFoldsOnFileOpen
-  autocmd!
-  autocmd BufRead * normal zR
-augroup END
