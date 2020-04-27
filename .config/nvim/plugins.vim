@@ -7,6 +7,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 
 Plug 'tomtom/tcomment_vim'
+Plug 'ap/vim-css-color'
 
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
