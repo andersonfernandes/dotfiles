@@ -1,17 +1,3 @@
-" lightline
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ },
-      \ }
-
 " NERDTree
 let NERDTreeShowHidden=1
 

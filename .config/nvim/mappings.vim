@@ -34,4 +34,4 @@ nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFind<cr>
 
 " LanguageClient-neovim
-nnoremap <leader>cm :call LanguageClient_contextMenu()<CR><Paste>
+nnoremap <leader>cm :call LanguageClient_contextMenu()<CR>

@@ -5,6 +5,7 @@ let s:config_files = [
       \'functions.vim',
       \'plugins.vim',
       \'common.vim',
+      \'statusline.vim',
       \'mappings.vim',
       \'plugins-configs.vim',
       \]
