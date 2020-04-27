@@ -30,8 +30,8 @@ noremap <c-p> :Files<cr>
 noremap <c-b> :Buffers<cr>
 
 " NERDTree
-nmap <leader>ne :NERDTreeToggle<cr>
-nmap <leader>nf :NERDTreeFind<cr>
+nmap <space>e :NERDTreeToggle<cr>
+nmap <space>f :NERDTreeFind<cr>
 
 " LanguageClient-neovim
 nnoremap <leader>cm :call LanguageClient_contextMenu()<CR>
