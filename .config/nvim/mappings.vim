@@ -13,8 +13,6 @@ noremap <leader>vs :vsplit<cr>
 noremap <leader>hs :split<cr>
 
 noremap <leader>tn :tabnew<cr>
-noremap <leader>th :tabprevious<cr>
-noremap <leader>tl :tabnext<cr>
 noremap <leader>tq :tabclose<cr>
 
 " Moves a visual block
@@ -41,3 +39,7 @@ nmap <leader>f :NERDTreeFind<cr>
 
 " LanguageClient-neovim
 nnoremap <leader>cm :call LanguageClient_contextMenu()<CR>
+
+" vim-test
+nmap <silent> <leader>tt :TestFile -strategy=neovim<CR>
+nmap <silent> <leader>tl :TestNearest -strategy=neovim<CR>
