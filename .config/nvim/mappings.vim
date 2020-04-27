@@ -15,6 +15,9 @@ noremap <leader>tl :tabnext<cr>
 noremap <leader>th :tabprevious<cr>
 noremap <leader>tq :tabclose<cr>
 
+" Update tags file
+nnoremap <leader>ut :! ctags -R -V  --exclude=.git --exclude=node_modules --exclude=tmp --exclude=vendor --exclude=public --exclude=coverage --exclude=railsboxdev *<cr>
+
 " Finders
 noremap <leader>fC :Files app/controllers<cr>
 noremap <leader>fM :Files app/models<cr>
