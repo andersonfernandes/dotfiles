@@ -3,7 +3,6 @@ set number
 set inccommand=split
 set nowrap
 set modifiable
-set colorcolumn=120
 set clipboard=unnamed
 
 " Theme
@@ -22,3 +21,6 @@ set tabstop=2
 set expandtab
 
 set statusline=%!BuildStatusLine()
+
+set showtabline=1
+set tabline=%!BuildTabLine()

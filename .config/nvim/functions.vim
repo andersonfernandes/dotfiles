@@ -14,3 +14,35 @@ function! BuildStatusLine()
 
   return statusLine
 endf
+
+function! BuildTabLine()
+  let tabLine = ''
+  let tabs = tabpagenr()
+
+  for index in range(tabpagenr('$'))
+    let tab =  index + 1
+    let buffersList = tabpagebuflist(tab)
+    let windowNumber = tabpagewinnr(tab)
+    let fileName = bufname(buffersList[windowNumber - 1])
+    let bufferNumber = buffersList[windowNumber - 1]
+
+    let tabLine .= '%' . tab . 'T'
+    let tabLine .= (tab == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#')
+    let tabLine .= '  ' . tab . ': '
+    let tabLine .= (tab == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#')
+
+    let fileName = fnamemodify(fileName, ':p:tabs')
+    if fileName == ''
+      let fileName  = 'No Name'
+    endif
+
+    let bufmodified = getbufvar(bufferNumber, "&mod")
+    if bufmodified
+      let fileName .= ' +'
+    endif
+
+    let tabLine .= '[' . fileName . ']'
+  endfor
+
+  return tabLine
+endf

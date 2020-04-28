@@ -1,6 +1,6 @@
 # andersonfernandes dotfiles
 
-![NeoVim config sample](/look.png)
+![NeoVim config sample](/screenshot.png)
 
 ## Dependencies
 You need to have installed this dependencies before continue:
