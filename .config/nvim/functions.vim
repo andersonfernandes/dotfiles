@@ -28,7 +28,7 @@ function! BuildTabLine()
 
     let tabLine .= '%' . tab . 'T'
     let tabLine .= (tab == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#')
-    let tabLine .= '  ' . tab . ': '
+    let tabLine .= ' ' . tab . '  '
     let tabLine .= (tab == tabpagenr() ? '%#TabLineSel#' : '%#TabLine#')
 
     let fileName = fnamemodify(fileName, ':p:tabs')
@@ -38,10 +38,15 @@ function! BuildTabLine()
 
     let bufmodified = getbufvar(bufferNumber, "&mod")
     if bufmodified
-      let fileName .= ' +'
+      let fileName .= '*'
     endif
 
-    let tabLine .= '[' . fileName . ']'
+    let tabLine .= fileName . ' '
+
+    let tabLine .= '%#TabLineFill#'
+    if (exists("g:tablineclosebutton"))
+      let tabLine .= '%=%999XX'
+    endif
   endfor
 
   return tabLine
