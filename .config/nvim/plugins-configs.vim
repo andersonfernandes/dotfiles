@@ -13,3 +13,6 @@ let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.rvm/gems/ruby-2.5.1/bin/solargraph', 'stdio'],
     \ }
+
+let g:ale_fixers = {'vue': ['remove_trailing_lines', 'trim_whitespace']}
+let g:ale_linter_aliases = {'vue': ['javascript', 'html', 'scss']}
