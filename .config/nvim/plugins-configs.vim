@@ -14,5 +14,6 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.rvm/gems/ruby-2.5.1/bin/solargraph', 'stdio'],
     \ }
 
+" ale
 let g:ale_fixers = {'vue': ['remove_trailing_lines', 'trim_whitespace']}
 let g:ale_linter_aliases = {'vue': ['javascript', 'html', 'scss']}

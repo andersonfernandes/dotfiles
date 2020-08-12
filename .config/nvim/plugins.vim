@@ -26,6 +26,7 @@ Plug 'tpope/vim-rails'
 Plug 'janko-m/vim-test'
 Plug 'ngmy/vim-rubocop'
 Plug 'posva/vim-vue'
+Plug 'ecomba/vim-ruby-refactoring'
 
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'

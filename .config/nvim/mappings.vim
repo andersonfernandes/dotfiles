@@ -43,3 +43,14 @@ nnoremap <leader>cm :call LanguageClient_contextMenu()<CR>
 " vim-test
 nmap <silent> <leader>tt :TestFile -strategy=neovim<CR>
 nmap <silent> <leader>tl :TestNearest -strategy=neovim<CR>
+
+" vim-ruby-refactoring
+nmap <leader>rap  :RAddParameter<cr>
+nmap <leader>rcpc :RConvertPostConditional<cr>
+nmap <leader>rel  :RExtractLet<cr>
+vmap <leader>rec  :RExtractConstant<cr>
+vmap <leader>relv :RExtractLocalVariable<cr>
+nmap <leader>rit  :RInlineTemp<cr>
+vmap <leader>rrlv :RRenameLocalVariable<cr>
+vmap <leader>rriv :RRenameInstanceVariable<cr>
+vmap <leader>rem  :RExtractMethod<cr>
