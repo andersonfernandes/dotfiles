@@ -1,3 +1,5 @@
+set noerrorbells
+set incsearch
 set hidden
 set number
 set inccommand=split
