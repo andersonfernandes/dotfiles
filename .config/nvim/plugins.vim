@@ -8,7 +8,6 @@ Plug 'mhinz/vim-signify'
 
 Plug 'cohama/lexima.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'ap/vim-css-color'
 
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -18,7 +17,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-ruby/vim-ruby'
 
-Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rails', { 'tag': 'v5.2' }
 Plug 'janko-m/vim-test'
 Plug 'ngmy/vim-rubocop'
 Plug 'posva/vim-vue'
