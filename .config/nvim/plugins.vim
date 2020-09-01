@@ -9,7 +9,7 @@ Plug 'mhinz/vim-signify'
 Plug 'tomtom/tcomment_vim'
 Plug 'ap/vim-css-color'
 
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
