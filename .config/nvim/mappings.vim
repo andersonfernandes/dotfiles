@@ -45,4 +45,6 @@ nmap <silent> <leader>tl :TestNearest -strategy=neovim<CR>
 nmap <leader>gh :diffget //2<CR>
 nmap <leader>gl :diffget //3<CR>
 nmap <leader>gs :G<CR>
-nmap <leader>gcs :Gcommit -s<CR>
+
+" fzf-checkout
+nmap <leader>gc :GBranches<CR>

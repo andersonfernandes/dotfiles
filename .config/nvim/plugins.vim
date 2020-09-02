@@ -3,15 +3,16 @@ Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
-
 Plug 'cohama/lexima.vim'
 Plug 'tomtom/tcomment_vim'
 
-Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
+Plug 'stsewd/fzf-checkout.vim'
+
+Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 Plug 'sheerun/vim-polyglot'

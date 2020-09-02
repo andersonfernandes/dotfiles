@@ -73,7 +73,7 @@ Run the update script:
 | `<leader> + gs`      | Runs a Git Status using vim-fugitive                                                     |
 | `<leader> + gh`      | In the merge conflicts panel, grabs the left side of the diff                            |
 | `<leader> + gl`      | In the merge conflicts panel, grabs the right side of the diff                           |
-| `<leader> + gcs`     | Creates a signed commit                                                                  |
+| `<leader> + gc`      | Opens the fzf checkout menu                                                              |
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

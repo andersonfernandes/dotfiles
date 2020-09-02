@@ -12,3 +12,7 @@ let g:ale_linter_aliases = {'vue': ['javascript', 'html', 'scss']}
 
 " coc.nvim
 let g:coc_global_extensions = ['coc-solargraph', 'coc-css', 'coc-elixir', 'coc-json', 'coc-tsserver', 'coc-vetur', 'coc-yaml', 'coc-html']
+
+" fzf
+let g:fzf_layout = { 'window': {'width': 0.7, 'height': 0.5 } }
+let $FZF_DEFAULT_OPTS='--reverse'
