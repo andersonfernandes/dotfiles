@@ -74,6 +74,10 @@ Run the update script:
 | `<leader> + gh`      | In the merge conflicts panel, grabs the left side of the diff                            |
 | `<leader> + gl`      | In the merge conflicts panel, grabs the right side of the diff                           |
 | `<leader> + gc`      | Opens the fzf checkout menu                                                              |
+| `<F7>`               | Opens a new floaterm session                                                             |
+| `<F8>`               | Opens the prev floaterm session, if available                                            |
+| `<F9>`               | Toggle the floaterm session visibility. If no session available, it creates a new one    |
+| `<F10>`              | Opens the next floaterm session, if available                                            |
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

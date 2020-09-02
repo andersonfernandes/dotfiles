@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'voldikss/vim-floaterm'
 
 Plug 'cohama/lexima.vim'
 Plug 'tomtom/tcomment_vim'
