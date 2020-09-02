@@ -68,9 +68,12 @@ Run the update script:
 | `control + b`        | Opens the list of active Buffers on the session                                          |
 | `<leader> + <space>` | Toggles the NERDTree                                                                     |
 | `<leader + f>`       | Toggles the NERDTree and locates the current file on the tree                            |
-| `<leader> + cm`      | Opens the LanguageClient-neovim context menu                                             |
 | `<leader> + tt`      | In a test file runs all tests in the current file, otherwise runs the last file tests    |
 | `<leader> + tl`      | In a test file runs the test nearest to the cursor, otherwise runs the last nearest test |
+| `<leader> + gs`      | Runs a Git Status using vim-fugitive                                                     |
+| `<leader> + gh`      | In the merge conflicts panel, grabs the left side of the diff                            |
+| `<leader> + gl`      | In the merge conflicts panel, grabs the right side of the diff                           |
+| `<leader> + gcs`     | Creates a signed commit                                                                  |
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
