@@ -48,9 +48,3 @@ nmap <leader>gs :G<CR>
 
 " fzf-checkout
 nmap <leader>gc :GBranches<CR>
-
-" vim-floaterm
-let g:floaterm_keymap_new    = '<F7>'
-let g:floaterm_keymap_prev   = '<F8>'
-let g:floaterm_keymap_toggle = '<F9>'
-let g:floaterm_keymap_next   = '<F10>'

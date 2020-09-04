@@ -1,3 +1,10 @@
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 10
+
 " NERDTree
 let NERDTreeShowHidden=1
 
@@ -16,3 +23,9 @@ let g:coc_global_extensions = ['coc-solargraph', 'coc-css', 'coc-elixir', 'coc-j
 " fzf
 let g:fzf_layout = { 'window': {'width': 0.7, 'height': 0.5 } }
 let $FZF_DEFAULT_OPTS='--reverse'
+
+" vim-floaterm
+let g:floaterm_keymap_new    = '<F7>'
+let g:floaterm_keymap_prev   = '<F8>'
+let g:floaterm_keymap_toggle = '<F9>'
+let g:floaterm_keymap_next   = '<F10>'
