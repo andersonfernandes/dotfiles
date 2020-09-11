@@ -44,7 +44,7 @@ nmap <silent> <leader>tl :TestNearest -strategy=neovim<CR>
 " vim-fugitive
 nmap <leader>gh :diffget //2<CR>
 nmap <leader>gl :diffget //3<CR>
-nmap <leader>gs :G<CR>
+nmap <leader>gs :call ToggleGStatus()<CR>
 
 " fzf-checkout
 nmap <leader>gc :GBranches<CR>
