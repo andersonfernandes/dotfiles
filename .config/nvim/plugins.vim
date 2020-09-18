@@ -23,4 +23,5 @@ Plug 'tpope/vim-rails', { 'tag': 'v5.2' }
 Plug 'janko-m/vim-test'
 Plug 'ngmy/vim-rubocop'
 Plug 'posva/vim-vue'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
