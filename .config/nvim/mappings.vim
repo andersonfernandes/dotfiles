@@ -48,3 +48,9 @@ nmap <leader>gs :call ToggleGStatus()<CR>
 
 " fzf-checkout
 nmap <leader>gc :GBranches<CR>
+
+" pry rails
+:abbr pry require 'pry'; binding.pry<ESC>m0<CR>
+map <leader>p :call PryRails()<cr>
+
+

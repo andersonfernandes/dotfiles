@@ -59,3 +59,11 @@ function! ToggleGStatus()
     Gstatus
   endif
 endfunction
+
+function! PryRails()
+  if (&ft=='ruby') 
+    execute "normal! o require 'pry'; binding.pry"
+  else 
+    execute "normal! o <% require 'pry'; binding.pry %>"
+  endif
+endf
