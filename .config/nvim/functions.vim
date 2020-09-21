@@ -8,8 +8,8 @@ endfunction
 
 function! BuildStatusLine()
   let statusLine = ''
-  let statusLine .= '%#PmenuSel#' . ' ' . fugitive#head() . ' ' . '%#ColorColumn# [%n] %f'
-  let statusLine .= '%=' . CurrentFileFormat() . ' | ' . CurrentFileType() . ' | %{&fileencoding?&fileencoding:&encoding}  '
+  let statusLine .= '%#PmenuThumb#' . ' ' . fugitive#head() . ' ' . '%#ColorColumn# [%n] %f'
+  let statusLine .= '%=' . CurrentFileFormat() . ' | ' . CurrentFileType() . '  '
   let statusLine .= '%#PmenuThumb#' . '  %p%%  %l:%c  '
 
   return statusLine
