@@ -60,10 +60,8 @@ function! ToggleGStatus()
   endif
 endfunction
 
-function! PryRails()
-  if (&ft=='ruby') 
-    execute "normal! o require 'pry'; binding.pry"
-  else 
-    execute "normal! o <% require 'pry'; binding.pry %>"
-  endif
-endf
+function! AddPryRails()
+	  call complete(col('.'), ["require 'pry'; binding.pry", "<%= require 'pry'; binding.pry %>"])
+	  return ''
+endfunction
+
