@@ -59,3 +59,9 @@ function! ToggleGStatus()
     Gstatus
   endif
 endfunction
+
+function! AddPryRails()
+  call complete(col('.'), ["require 'pry'; binding.pry", "<%= require 'pry'; binding.pry %>"])
+  return ''
+endfunction
+
