@@ -5,7 +5,7 @@ set number
 set inccommand=split
 set nowrap
 set modifiable
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Theme
 syntax enable
