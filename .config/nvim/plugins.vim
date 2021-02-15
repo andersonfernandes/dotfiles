@@ -19,7 +19,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-ruby/vim-ruby'
 
-Plug 'tpope/vim-rails', { 'tag': 'v5.2' }
+Plug 'tpope/vim-rails'
 Plug 'janko-m/vim-test'
 Plug 'ngmy/vim-rubocop'
 Plug 'posva/vim-vue'
