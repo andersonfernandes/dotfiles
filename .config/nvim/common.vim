@@ -6,6 +6,7 @@ set inccommand=split
 set nowrap
 set modifiable
 set clipboard=unnamedplus
+set relativenumber
 
 " Theme
 syntax enable
