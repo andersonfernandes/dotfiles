@@ -16,6 +16,7 @@ Plug 'stsewd/fzf-checkout.vim'
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
+Plug 'honza/vim-snippets'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-ruby/vim-ruby'
 
