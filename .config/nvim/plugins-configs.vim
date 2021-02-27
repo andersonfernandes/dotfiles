@@ -36,9 +36,3 @@ let g:coc_snippet_next = '<tab>'
 " fzf
 let g:fzf_layout = { 'window': {'width': 0.7, 'height': 0.5 } }
 let $FZF_DEFAULT_OPTS='--reverse'
-
-" vim-floaterm
-let g:floaterm_keymap_new    = '<F7>'
-let g:floaterm_keymap_prev   = '<F8>'
-let g:floaterm_keymap_toggle = '<F9>'
-let g:floaterm_keymap_next   = '<F10>'

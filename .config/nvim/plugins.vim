@@ -1,8 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'ryanoasis/vim-devicons'
-Plug 'voldikss/vim-floaterm'
+Plug 'junegunn/goyo.vim', { 'on':  'Goyo' }
 
 Plug 'cohama/lexima.vim'
 Plug 'tomtom/tcomment_vim'
