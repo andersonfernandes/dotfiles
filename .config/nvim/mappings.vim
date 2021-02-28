@@ -15,6 +15,9 @@ noremap <leader>hs :split<cr>
 noremap <leader>tn :tabnew<cr>
 noremap <leader>tq :tabclose<cr>
 
+noremap <leader>w :set wrap<cr>
+noremap <leader>nw :set nowrap<cr>
+
 " Moves a visual block
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
