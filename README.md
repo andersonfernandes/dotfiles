@@ -35,7 +35,7 @@ cd ~/.dotfiles
 git pull origin master
 ```
 
-Run the update task:
+Update the NeoVim plugins:
 
 ```bash
 make nvim_update
