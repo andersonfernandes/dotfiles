@@ -3,6 +3,7 @@ Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim', { 'on':  'Goyo' }
+Plug 'RRethy/vim-illuminate'
 
 Plug 'cohama/lexima.vim'
 Plug 'tomtom/tcomment_vim'
