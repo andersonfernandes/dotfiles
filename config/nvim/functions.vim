@@ -52,7 +52,7 @@ function! BuildTabLine()
   return tabLine
 endf
 
-function! ToggleGStatus()
+function! ToggleGitStatus()
   if buflisted(bufname('.git/index'))
     bd .git/index
   else
