@@ -33,5 +33,7 @@ Plug 'tpope/vim-rails'
 Plug 'ngmy/vim-rubocop'
 
 " Javascript
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'posva/vim-vue'
 call plug#end()
