@@ -1,10 +1,3 @@
-" netrw
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 10
-
 " NERDTree
 let NERDTreeShowHidden=1
 
@@ -18,7 +11,17 @@ let g:ale_fixers = {'vue': ['remove_trailing_lines', 'trim_whitespace']}
 let g:ale_linter_aliases = {'vue': ['javascript', 'html', 'scss']}
 
 " coc.nvim
-let g:coc_global_extensions = ['coc-solargraph', 'coc-css', 'coc-elixir', 'coc-json', 'coc-tsserver', 'coc-vetur', 'coc-yaml', 'coc-html', 'coc-snippets']
+let g:coc_global_extensions = [
+      \'coc-solargraph',
+      \'coc-css',
+      \'coc-elixir',
+      \'coc-json',
+      \'coc-tsserver',
+      \'coc-vetur',
+      \'coc-yaml',
+      \'coc-html',
+      \'coc-snippets'
+      \]
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
