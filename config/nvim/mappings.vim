@@ -55,3 +55,9 @@ nmap <leader>gc :GBranches<CR>
 " pry rails
 :abbr pry require 'pry'; binding.pry<ESC>m0<CR>
 map <leader>p  i <C-R>=AddPryRails()<CR>
+
+" coc.nvim
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <leader>do <Plug>(coc-codeaction)
+nmap <leader>rn <Plug>(coc-rename)
