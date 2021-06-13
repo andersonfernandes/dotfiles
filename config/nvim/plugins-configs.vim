@@ -20,7 +20,8 @@ let g:coc_global_extensions = [
       \'coc-vetur',
       \'coc-yaml',
       \'coc-html',
-      \'coc-snippets'
+      \'coc-snippets',
+      \'coc-styled-components'
       \]
 
 inoremap <silent><expr> <TAB>
