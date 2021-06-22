@@ -18,6 +18,7 @@ Plug 'junegunn/fzf.vim' " fzf 🤝 vim
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'mhinz/vim-signify' " git diff in sign column
 Plug 'stsewd/fzf-checkout.vim' " branchs and tags management with fzf
+Plug 'rhysd/git-messenger.vim', { 'on': ['GitMessenger', 'GitMessengerClose'] }
 
 " Development misc
 Plug 'dense-analysis/ale' " lint engine
