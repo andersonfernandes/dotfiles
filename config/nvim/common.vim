@@ -13,7 +13,6 @@ set background=dark
 colorscheme gruvbox
 
 " Indentation
-filetype indent on
 set autoindent
 set smartindent
 set smarttab
