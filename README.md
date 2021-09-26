@@ -3,14 +3,12 @@
 ![NeoVim config sample](/screenshot.png)
 
 ## Dependencies
-You need to have installed this dependencies before continue:
 
-- [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
+- tmux, python3, ctags, zsh, git, curl
+- [oh-my-zsh](https://ohmyz.sh/#install) with [powerlevel10k theme](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
 - [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-- [Python3](https://www.python.org/downloads/)
 - [Nerd Font compatible font](https://github.com/ryanoasis/nerd-fonts#font-installation)
 - [The Silver Searcher](https://github.com/ggreer/the_silver_searcher#installing)
-- [Ctags](https://github.com/universal-ctags/ctags)
 
 ## Installation
 
