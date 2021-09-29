@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Interface
 Plug 'morhetz/gruvbox' " that awesome colorscheme
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 
 " Editing
