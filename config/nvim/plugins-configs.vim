@@ -1,5 +1,6 @@
 " NERDTree
 let NERDTreeShowHidden=1
+let g:NERDTreeGitStatusUseNerdFonts = 1
 
 " vim-ruby
 autocmd FileType ruby let g:rubycomplete_buffer_loading = 1

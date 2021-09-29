@@ -1,9 +1,10 @@
 call plug#begin('~/.local/share/nvim/plugged')
 " Interface
 Plug 'morhetz/gruvbox' " that awesome colorscheme
+Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 
 " Editing
 Plug 'cohama/lexima.vim' " auto  closing parentheses
