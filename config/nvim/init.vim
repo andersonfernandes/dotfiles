@@ -1,10 +1,9 @@
 let s:config_path = $HOME.'/.config/nvim/'
 let s:config_files = [
-      \'functions.vim',
       \'plugins.vim',
+      \'functions.vim',
       \'common.vim',
-      \'mappings.vim',
-      \'plugins-configs.vim',
+      \'maps.vim',
       \]
 
 for file in s:config_files

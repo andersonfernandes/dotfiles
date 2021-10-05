@@ -2,7 +2,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Interface
 Plug 'morhetz/gruvbox' " that awesome colorscheme
 Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
@@ -11,6 +10,7 @@ Plug 'cohama/lexima.vim' " auto  closing parentheses
 Plug 'junegunn/goyo.vim', { 'on':  'Goyo' } " distraction-free writing
 Plug 'RRethy/vim-illuminate' " word highlighting
 Plug 'tomtom/tcomment_vim'
+Plug 'AndrewRadev/splitjoin.vim'
 
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -20,7 +20,6 @@ Plug 'junegunn/fzf.vim' " fzf 🤝 vim
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'mhinz/vim-signify' " git diff in sign column
 Plug 'stsewd/fzf-checkout.vim' " branchs and tags management with fzf
-Plug 'rhysd/git-messenger.vim', { 'on': ['GitMessenger', 'GitMessengerClose'] }
 
 " Development misc
 Plug 'dense-analysis/ale' " lint engine
