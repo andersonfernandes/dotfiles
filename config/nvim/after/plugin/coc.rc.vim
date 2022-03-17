@@ -10,7 +10,8 @@ let g:coc_global_extensions = [
       \'coc-yaml',
       \'coc-html',
       \'coc-snippets',
-      \'coc-styled-components'
+      \'coc-styled-components',
+      \'coc-python'
       \]
 
 inoremap <silent><expr> <TAB>
