@@ -5,11 +5,9 @@ Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plug 'ryanoasis/vim-devicons'
 
 " Editing
-Plug 'cohama/lexima.vim' " auto  closing parentheses
-Plug 'junegunn/goyo.vim', { 'on':  'Goyo' } " distraction-free writing
+Plug 'cohama/lexima.vim' " auto closing parentheses
 Plug 'RRethy/vim-illuminate' " word highlighting
 Plug 'tomtom/tcomment_vim'
-Plug 'AndrewRadev/splitjoin.vim'
 
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
