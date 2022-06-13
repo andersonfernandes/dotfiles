@@ -6,9 +6,17 @@ function! CurrentFileFormat()
   return winwidth(0) > 140 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : WebDevIconsGetFileFormatSymbol()
 endfunction
 
+function! CurrentBranch()
+  let branchName = FugitiveStatusline()
+  let branchName = substitute(branchName, '[Git(', '', '')
+  let branchName = substitute(branchName, ')]', '', '')
+
+  return branchName
+endfunction
+
 function! BuildStatusLine()
   let statusLine = ''
-  let statusLine .= '%#PmenuThumb#' . ' ' . fugitive#head() . ' ' . '%#ColorColumn# [%n] %f'
+  let statusLine .= '%#PmenuThumb#' . ' ' . CurrentBranch() . ' ' . '%#ColorColumn# [%n] %f'
   let statusLine .= '%=' . CurrentFileFormat() . ' | ' . CurrentFileType() . '  '
   let statusLine .= '%#PmenuThumb#' . '  %p%%  %l:%c  '
 
