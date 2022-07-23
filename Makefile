@@ -3,7 +3,7 @@ MAKEFLAGS += --silent
 install:
 	mkdir -p ~/.scripts/
 	@echo "Installing dependencies"
-	sudo apt install tmux python3 exuberant-ctags zsh git curl silversearcher-ag neovim
+	sudo apt install tmux python3 exuberant-ctags zsh git curl silversearcher-ag neovim fonts-powerline
 	@echo "Linking config files"
 	ln -sfn ~/.dotfiles/tmux.conf ~/.tmux.conf
 	ln -sfn ~/.dotfiles/config/nvim ~/.config/
