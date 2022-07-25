@@ -9,18 +9,18 @@ return require('packer').startup(function()
   use 'ryanoasis/vim-devicons'
 
   -- Editing
-  --Plug 'cohama/lexima.vim' " auto closing parentheses
-  --Plug 'RRethy/vim-illuminate' " word highlighting
-  --Plug 'tomtom/tcomment_vim'
+  use 'cohama/lexima.vim'
+  use 'RRethy/vim-illuminate'
+  use 'tomtom/tcomment_vim'
 
   -- Fuzzy Finder
-  --Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  --Plug 'junegunn/fzf.vim' " fzf 🤝 vim
+  use {'junegunn/fzf', dir = '~/.fzf', run = './install --all' }
+  use 'junegunn/fzf.vim'
 
   -- Git
-  --Plug 'tpope/vim-fugitive' " git wrapper
-  --Plug 'mhinz/vim-signify' " git diff in sign column
-  --Plug 'stsewd/fzf-checkout.vim' " branchs and tags management with fzf
+  use 'tpope/vim-fugitive'
+  use 'mhinz/vim-signify'
+  use 'stsewd/fzf-checkout.vim'
 
   -- Development misc
   --Plug 'dense-analysis/ale' " lint engine

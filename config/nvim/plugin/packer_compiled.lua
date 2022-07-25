@@ -69,10 +69,30 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  fzf = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf-checkout.vim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf-checkout.vim",
+    url = "https://github.com/stsewd/fzf-checkout.vim"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
+  },
+  ["lexima.vim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/lexima.vim",
+    url = "https://github.com/cohama/lexima.vim"
   },
   nerdtree = {
     commands = { "NERDTreeToggle", "NERDTreeFind" },
@@ -87,10 +107,30 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  tcomment_vim = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/tcomment_vim",
+    url = "https://github.com/tomtom/tcomment_vim"
+  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-signify"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-signify",
+    url = "https://github.com/mhinz/vim-signify"
   }
 }
 

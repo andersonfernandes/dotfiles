@@ -40,9 +40,9 @@ nnoremap("<leader>jc", ":Files app/controllers<cr>")
 nnoremap("<leader>jm", ":Files app/models<cr>")
 
 -- fzf.vim
---noremap <c-f> :Ag<space>
---noremap <c-p> :Files<cr>
---noremap <c-b> :Buffers<cr>
+nnoremap('<c-f>', ':Ag<space>')
+nnoremap('<c-p>', ':Files<cr>')
+nnoremap('<c-b>', ':Buffers<cr>')
 
 -- NERDTree
 nnoremap("<leader><space>", ":NERDTreeToggle<cr>")
@@ -53,12 +53,12 @@ nnoremap("<leader>f", ":NERDTreeFind<cr>")
 --nmap <silent> <leader>tl :TestNearest -strategy=neovim<CR>
 
 -- vim-fugitive
---nmap <leader>gh :diffget //2<CR>
---nmap <leader>gl :diffget //3<CR>
---nmap <leader>gs :call ToggleGitStatus()<CR>
+nmap('<leader>gh', ':diffget //2<CR>')
+nmap('<leader>gl', ':diffget //3<CR>')
+nmap('<leader>gs', ':call ToggleGitStatus()<CR>')
 
 -- fzf-checkout
---nmap <leader>gc :GBranches<CR>
+nmap('<leader>gc', ':GBranches<CR>')
 
 -- pry rails
 --:abbr pry require 'pry'; binding.pry<ESC>m0<CR>
