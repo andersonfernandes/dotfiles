@@ -23,8 +23,8 @@ return require('packer').startup(function()
   use 'stsewd/fzf-checkout.vim'
 
   -- Development misc
-  --Plug 'dense-analysis/ale' " lint engine
-  --Plug 'neoclide/coc.nvim', { 'branch': 'release' } " extension host
+  use 'dense-analysis/ale'
+  use { 'neoclide/coc.nvim', branch = 'release' }
   --Plug 'sheerun/vim-polyglot' " language pack
   --Plug 'janko-m/vim-test' " tests runner
   --Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
