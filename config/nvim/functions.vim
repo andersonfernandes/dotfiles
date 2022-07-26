@@ -61,8 +61,8 @@ function! BuildTabLine()
 endf
 
 function! ToggleGitStatus()
-  if buflisted(bufname('.git/index'))
-    bd .git/index
+  if buflisted(bufname('.git//'))
+    bd
   else
     Git
   endif
