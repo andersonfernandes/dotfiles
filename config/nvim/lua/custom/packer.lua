@@ -25,18 +25,17 @@ return require('packer').startup(function()
   -- Development misc
   use 'dense-analysis/ale'
   use { 'neoclide/coc.nvim', branch = 'release' }
-  --Plug 'sheerun/vim-polyglot' " language pack
-  --Plug 'janko-m/vim-test' " tests runner
-  --Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-  --Plug 'honza/vim-snippets'
+  use 'sheerun/vim-polyglot'
+  use 'janko-m/vim-test'
+  use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
+  use 'honza/vim-snippets'
 
   -- Ruby
-  --Plug 'vim-ruby/vim-ruby'
-  --Plug 'tpope/vim-rails'
-  --Plug 'ngmy/vim-rubocop'
+  use 'vim-ruby/vim-ruby'
+  use 'tpope/vim-rails'
+  use 'ngmy/vim-rubocop'
 
   -- Javascript
-  --Plug 'pangloss/vim-javascript'
-  --Plug 'maxmellon/vim-jsx-pretty'
-  --Plug 'posva/vim-vue'
+  use 'pangloss/vim-javascript'
+  use 'maxmellon/vim-jsx-pretty'
 end)
