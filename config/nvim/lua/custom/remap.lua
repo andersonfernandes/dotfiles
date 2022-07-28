@@ -29,8 +29,8 @@ nnoremap("<leader>w", ":set wrap<cr>")
 nnoremap("<leader>nw", ":set nowrap<cr>")
 
 -- Moves a visual block
-xnoremap("K :move", "'<-2<CR>gv-gv")
-xnoremap("J :move", "'>+1<CR>gv-gv")
+xnoremap("K", ":move '<-2<CR>gv-gv")
+xnoremap("J", ":move '>+1<CR>gv-gv")
 
 -- Update tags file with ctags
 nnoremap("<leader>ut", ":! ctags -R -V  --exclude=.git --exclude=node_modules --exclude=tmp --exclude=vendor --exclude=public --exclude=coverage --exclude=railsboxdev *<cr>")
@@ -49,23 +49,23 @@ nnoremap("<leader><space>", ":NvimTreeToggle<cr>")
 nnoremap("<leader>f", ":NvimTreeFindFile<cr>")
 
 -- vim-test
---nmap <silent> <leader>tt :TestFile -strategy=neovim<CR>
---nmap <silent> <leader>tl :TestNearest -strategy=neovim<CR>
+nmap('<leader>tt', ':TestFile -strategy=neovim<CR>', {silent = true})
+nmap('<leader>tl', ':TestNearest -strategy=neovim<CR>', {silent = true})
 
 -- vim-fugitive
 nmap('<leader>gh', ':diffget //2<CR>')
 nmap('<leader>gl', ':diffget //3<CR>')
-nmap('<leader>gs', ':call ToggleGitStatus()<CR>')
+nmap('<leader>gs', ':Git<CR>')
 
 -- fzf-checkout
 nmap('<leader>gc', ':GBranches<CR>')
 
+-- coc.nvim
+nmap('gd', '<Plug>(coc-definition)', {silent = true})
+nmap('gr', '<Plug>(coc-references)', {silent = true})
+nmap('<leader>do', '<Plug>(coc-codeaction)')
+nmap('<leader>rn', '<Plug>(coc-rename)')
+
 -- pry rails
 --:abbr pry require 'pry'; binding.pry<ESC>m0<CR>
 --map <leader>p  i <C-R>=AddPryRails()<CR>
-
--- coc.nvim
---nmap <silent> gd <Plug>(coc-definition)
---nmap <silent> gr <Plug>(coc-references)
---nmap <leader>do <Plug>(coc-codeaction)
---nmap <leader>rn <Plug>(coc-rename)
