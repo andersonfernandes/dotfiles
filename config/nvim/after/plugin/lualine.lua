@@ -1,6 +1,6 @@
 require('lualine').setup {
   options = {
-    theme = 'gruvbox_dark',
+    theme = 'gruvbox-material',
     refresh = {
       statusline = 1000,
       tabline = 1000,
