@@ -65,7 +65,3 @@ nmap('gd', '<Plug>(coc-definition)', {silent = true})
 nmap('gr', '<Plug>(coc-references)', {silent = true})
 nmap('<leader>do', '<Plug>(coc-codeaction)')
 nmap('<leader>rn', '<Plug>(coc-rename)')
-
--- pry rails
---:abbr pry require 'pry'; binding.pry<ESC>m0<CR>
---map <leader>p  i <C-R>=AddPryRails()<CR>
