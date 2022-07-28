@@ -56,7 +56,9 @@ nmap('<leader>tl', ':TestNearest -strategy=neovim<CR>', {silent = true})
 -- vim-fugitive
 nmap('<leader>gh', ':diffget //2<CR>')
 nmap('<leader>gl', ':diffget //3<CR>')
-nmap('<leader>gs', ':Git<CR>')
+nnoremap('<leader>gs', ':Git<CR>')
+nnoremap('<leader>gp', ':Git push -u<CR>')
+nnoremap('<leader>gpf', ':Git push --force<CR>')
 
 -- fzf-checkout
 nmap('<leader>gc', ':GBranches<CR>')
