@@ -9,6 +9,7 @@ nnoremap("<Leader>ev", ":vsplit ~/.config/nvim/init.lua<cr>")
 nnoremap("<Leader>sv", ":source ~/.config/nvim/init.lua<cr>")
 
 nnoremap("Q", "<nop>")
+nmap('<esc>', ':noh <CR>')
 
 -- Splits
 nnoremap("<leader>vs", ":vsplit<cr>")
