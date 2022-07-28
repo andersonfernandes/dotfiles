@@ -5,8 +5,8 @@ return require('packer').startup(function()
 
   -- Interface
   use 'morhetz/gruvbox'
-  use {'preservim/nerdtree', opt = true, cmd = {'NERDTreeToggle', 'NERDTreeFind'}}
-  use 'ryanoasis/vim-devicons'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-lualine/lualine.nvim'
 
   -- Editing
   use 'cohama/lexima.vim'

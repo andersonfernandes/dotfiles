@@ -44,9 +44,9 @@ nnoremap('<c-f>', ':Ag<space>')
 nnoremap('<c-p>', ':Files<cr>')
 nnoremap('<c-b>', ':Buffers<cr>')
 
--- NERDTree
-nnoremap("<leader><space>", ":NERDTreeToggle<cr>")
-nnoremap("<leader>f", ":NERDTreeFind<cr>")
+-- nvim-tree.lua
+nnoremap("<leader><space>", ":NvimTreeToggle<cr>")
+nnoremap("<leader>f", ":NvimTreeFindFile<cr>")
 
 -- vim-test
 --nmap <silent> <leader>tt :TestFile -strategy=neovim<CR>
