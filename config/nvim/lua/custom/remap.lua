@@ -6,7 +6,6 @@ local xnoremap = keymap.xnoremap
 local nmap = keymap.nmap
 
 nnoremap("<Leader>ev", ":vsplit ~/.config/nvim/init.lua<cr>")
-nnoremap("<Leader>sv", ":source ~/.config/nvim/init.lua<cr>")
 
 nnoremap("Q", "<nop>")
 nmap('<esc>', ':noh <CR>')
@@ -66,5 +65,4 @@ nmap('<leader>gc', ':GBranches<CR>')
 -- coc.nvim
 nmap('gd', '<Plug>(coc-definition)', {silent = true})
 nmap('gr', '<Plug>(coc-references)', {silent = true})
-nmap('<leader>do', '<Plug>(coc-codeaction)')
 nmap('<leader>rn', '<Plug>(coc-rename)')
