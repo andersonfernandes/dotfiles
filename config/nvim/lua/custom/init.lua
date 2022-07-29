@@ -1,3 +1,3 @@
 require("custom.set")
-require("custom.packer")
+require("custom.plugins")
 require("custom.remap")

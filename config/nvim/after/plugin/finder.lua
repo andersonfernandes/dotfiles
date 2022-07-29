@@ -1,3 +1,4 @@
+-- fzf
 vim.g.fzf_layout = {
   window = {
     width = 0.7,

@@ -1,3 +1,4 @@
+-- coc.nvim
 vim.g.coc_global_extensions = {
   'coc-solargraph',
   'coc-css',
