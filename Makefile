@@ -9,24 +9,24 @@ install:
 	ln -sfn ~/.dotfiles/config/nvim ~/.config/
 	ln -sfn ~/.dotfiles/scripts/setup_rvm.sh ~/.scripts/setup_rvm.sh
 	echo '\n#RVM on tmux fix\n[ -f ~/.scripts/setup_rvm.sh ] && source ~/.scripts/setup_rvm.sh' >> ~/.zshrc
-	@echo "Installing vim-plug"
-	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	@echo "Installing packer.nvim"
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+	 ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 	@echo "Installing NeoVim plugins"
-	nvim +'PlugInstall --sync' +qa
+	nvim +PackerSync +qa
 	cd ~/.fzf/ && ./install
 	@echo "Done!"
 
 nvim_update:
 	@echo "Creating a backup of the current plugins versions"
-	nvim +'PlugSnapshot! plugins.bkp' +qal > /dev/null
+	nvim +'PackerSnapshot plugins.bkp' +qal > /dev/null
 	@echo "Updating plugins"
-	nvim +'PlugInstall --sync' +PlugUpdate +qall
+	nvim +PackerSync +qa
 	@echo "\nRun 'make nvim_plugins_rollback' to reinstall the previous plugins versions"
 	@echo "Done!\n"
 
 nvim_plugins_rollback:
 	@echo "Rolling back the plugins versions"
-	nvim +'source plugins.bkp' +qal
+	nvim +'PackerSnapshotRollback plugins.bkp' +qal
 	@echo "Rollback finished with success!\n"
 	
