@@ -56,7 +56,7 @@ nmap('<leader>tl', ':TestNearest -strategy=neovim<CR>', {silent = true})
 nmap('<leader>gh', ':diffget //2<CR>')
 nmap('<leader>gl', ':diffget //3<CR>')
 nnoremap('<leader>gs', ':Git<CR>')
-nnoremap('<leader>gp', ':Git push -u<CR>')
+nnoremap('<leader>gp', ':Git push<CR>')
 nnoremap('<leader>gpf', ':Git push --force<CR>')
 
 -- fzf-checkout
