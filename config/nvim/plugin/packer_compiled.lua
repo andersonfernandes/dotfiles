@@ -99,20 +99,10 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
   },
-  ["lexima.vim"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/lexima.vim",
-    url = "https://github.com/cohama/lexima.vim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
-    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -183,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-snippets",
     url = "https://github.com/honza/vim-snippets"
-  },
-  ["vim-test"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-test",
-    url = "https://github.com/janko-m/vim-test"
   }
 }
 

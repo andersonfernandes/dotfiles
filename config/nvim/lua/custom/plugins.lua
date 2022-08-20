@@ -10,7 +10,6 @@ return require('packer').startup(function()
   use 'nvim-lualine/lualine.nvim'
 
   -- Editing
-  use 'cohama/lexima.vim'
   use 'RRethy/vim-illuminate'
   use 'tomtom/tcomment_vim'
 
@@ -27,8 +26,6 @@ return require('packer').startup(function()
   use 'dense-analysis/ale'
   use { 'neoclide/coc.nvim', branch = 'release' }
   use 'sheerun/vim-polyglot'
-  use 'janko-m/vim-test'
-  use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
   use 'honza/vim-snippets'
 
   -- Ruby
@@ -36,7 +33,7 @@ return require('packer').startup(function()
   use 'tpope/vim-rails'
   use 'ngmy/vim-rubocop'
 
-  -- Javascript
+  -- Javascript/Typescript
   use 'pangloss/vim-javascript'
   use 'maxmellon/vim-jsx-pretty'
 end)
