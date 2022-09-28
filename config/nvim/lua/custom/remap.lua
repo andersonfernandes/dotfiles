@@ -43,6 +43,7 @@ nnoremap("<leader>ut", ":! ctags -R -V  --exclude=.git --exclude=node_modules --
 -- Jumpers
 nnoremap("<leader>jc", ":Files app/controllers<cr>")
 nnoremap("<leader>jm", ":Files app/models<cr>")
+nnoremap("<leader>js", ":Files spec/<cr>")
 
 -- fzf.vim
 nnoremap('<c-f>', ':Ag<space>')
@@ -56,7 +57,6 @@ nnoremap("<leader>f", ":NvimTreeFindFile<cr>")
 -- vim-test
 nmap('<leader>tt', ':TestFile -strategy=neovim<CR>', {silent = true})
 nmap('<leader>tl', ':TestNearest -strategy=neovim<CR>', {silent = true})
-
 
 -- vim-fugitive
 nmap('<leader>gh', ':diffget //2<CR>')
