@@ -8,6 +8,45 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'nvim-lualine/lualine.nvim'
+  use {
+    'glepnir/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        config = {
+          -- https://patorjk.com/software/taag/#p=display&f=Bloody&t=neovim
+          header = {
+            '███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓',
+            '██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒',
+            '▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░',
+            '▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░  ▒██ █░░░██░▒██    ▒██ ',
+            '▒██░   ▓██░░▒████▒░ ████▓▒░   ▒▀█░  ░██░▒██▒   ░██▒',
+            '░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░    ░ ▐░  ░▓  ░ ▒░   ░  ░',
+            '░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░    ░ ░░   ▒ ░░  ░      ░',
+            '░   ░ ░    ░   ░ ░ ░ ▒       ░░   ▒ ░░      ░   ',
+            '░    ░  ░    ░ ░        ░   ░         ░   ',
+            '░                  ',
+            '',
+          },
+          shortcut = {
+            {
+              desc = ' Tree',
+              group = 'Label',
+              action = 'NvimTreeToggle',
+              key = 't',
+            },
+            {
+              desc = ' dotfiles',
+              group = 'Number',
+              action = 'vsplit ~/.config/nvim/init.lua',
+              key = 'd',
+            },
+          },
+        },
+      }
+    end,
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
 
   -- Editing
   use 'RRethy/vim-illuminate'
