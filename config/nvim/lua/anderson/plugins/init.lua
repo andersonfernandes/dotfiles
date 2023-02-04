@@ -1,0 +1,1 @@
+require 'anderson.plugins.dashboard'
