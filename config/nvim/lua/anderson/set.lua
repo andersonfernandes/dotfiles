@@ -4,8 +4,8 @@ vim.opt.incsearch = true
 vim.opt.hidden = true
 vim.opt.wrap = false
 vim.opt.modifiable = true
-vim.opt.inccommand = "split"
-vim.opt.clipboard = "unnamedplus"
+vim.opt.inccommand = 'split'
+vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.autoindent = true
 vim.opt.smartindent = true

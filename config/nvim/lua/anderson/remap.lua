@@ -1,6 +1,6 @@
-require('custom.functions')
+require 'anderson.utils.functions'
 
-local keymap = require("custom.keymap")
+local keymap = require 'anderson.utils.keymap'
 local nnoremap = keymap.nnoremap
 local vnoremap = keymap.vnoremap
 local inoremap = keymap.inoremap

@@ -16,6 +16,7 @@ return require('packer').startup(function()
         config = {
           -- https://patorjk.com/software/taag/#p=display&f=Bloody&t=neovim
           header = {
+            '',
             '███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓',
             '██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒',
             '▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░',
@@ -28,6 +29,8 @@ return require('packer').startup(function()
             '░                  ',
             '',
           },
+          packages = { enable = false },
+          project = { limit = 0 },
           shortcut = {
             {
               desc = ' Tree',
