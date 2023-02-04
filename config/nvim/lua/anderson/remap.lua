@@ -48,6 +48,7 @@ nnoremap("<leader>js", ":Files spec/<cr>")
 
 -- telescope.nvim
 nnoremap('<leader>te', ':Telescope<cr>')
+nmap('<leader>gc', ':Telescope git_branches<CR>')
 nnoremap('<c-f>', ':Telescope live_grep<cr>')
 nnoremap('<c-p>', ':Telescope find_files<cr>')
 nnoremap('<c-b>', ':Telescope buffers<cr>')
@@ -66,9 +67,6 @@ nmap('<leader>gl', ':diffget //3<CR>')
 nnoremap('<leader>gs', ':lua toggle_git_status_cmd()<CR>', {silent = true})
 nnoremap('<leader>gp', ':Git push<CR>')
 nnoremap('<leader>gpf', ':Git push --force<CR>')
-
--- fzf-checkout
-nmap('<leader>gc', ':GBranches<CR>')
 
 -- coc.nvim
 nmap('gd', '<Plug>(coc-definition)', {silent = true})

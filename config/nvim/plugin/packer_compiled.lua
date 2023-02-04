@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf",
     url = "https://github.com/junegunn/fzf"
   },
-  ["fzf-checkout.vim"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf-checkout.vim",
-    url = "https://github.com/stsewd/fzf-checkout.vim"
-  },
   gruvbox = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/gruvbox",

@@ -27,7 +27,6 @@ return require('packer').startup(function()
   -- Git
   use 'tpope/vim-fugitive'
   use 'mhinz/vim-signify'
-  use 'stsewd/fzf-checkout.vim'
 
   -- Development misc
   use 'dense-analysis/ale'

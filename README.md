@@ -77,7 +77,7 @@ make nvim_plugins_rollback
 | `<leader> + tt`      | In a test file runs all tests in the current file, otherwise runs the last file tests    |
 | `<leader> + tl`      | In a test file runs the test nearest to the cursor, otherwise runs the last nearest test |
 | `<leader> + gs`      | Runs a Git Status using vim-fugitive                                                     |
-| `<leader> + gc`      | Opens the fzf checkout menu                                                              |
+| `<leader> + gc`      | Opens the Telescope branches menu                                                              |
 | `<leader> + gp`      | Runs a Git push with the -u flag                                                         |
 | `<leader> + gpf`     | Runs a Git push with --force flag                                                        |
 | `<leader> + gh`      | In the merge conflicts panel, grabs the left side of the diff                            |
