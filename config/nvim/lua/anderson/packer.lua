@@ -12,6 +12,12 @@ return require('packer').startup(function()
     'glepnir/dashboard-nvim',
     requires = {'nvim-tree/nvim-web-devicons'}
   }
+  use {
+    'VonHeikemen/fine-cmdline.nvim',
+    requires = {
+      {'MunifTanjim/nui.nvim'}
+    }
+  }
 
   -- Editing
   use 'RRethy/vim-illuminate'
