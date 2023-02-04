@@ -2,8 +2,8 @@ require 'anderson.utils.functions'
 
 local keymap = require 'anderson.utils.keymap'
 local nnoremap = keymap.nnoremap
-local vnoremap = keymap.vnoremap
-local inoremap = keymap.inoremap
+-- local vnoremap = keymap.vnoremap
+-- local inoremap = keymap.inoremap
 local xnoremap = keymap.xnoremap
 local nmap = keymap.nmap
 
@@ -46,10 +46,11 @@ nnoremap("<leader>jm", ":Files app/models<cr>")
 nnoremap("<leader>jv", ":Files app/views/<cr>")
 nnoremap("<leader>js", ":Files spec/<cr>")
 
--- fzf.vim
-nnoremap('<c-f>', ':Ag<space>')
-nnoremap('<c-p>', ':Files<cr>')
-nnoremap('<c-b>', ':Buffers<cr>')
+-- telescope.nvim
+nnoremap('<leader>te', ':Telescope<cr>')
+nnoremap('<c-f>', ':Telescope live_grep<cr>')
+nnoremap('<c-p>', ':Telescope find_files<cr>')
+nnoremap('<c-b>', ':Telescope buffers<cr>')
 
 -- nvim-tree.lua
 nnoremap("<leader><space>", ":NvimTreeToggle<cr>")

@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf-checkout.vim",
     url = "https://github.com/stsewd/fzf-checkout.vim"
   },
-  ["fzf.vim"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf.vim",
-    url = "https://github.com/junegunn/fzf.vim"
-  },
   gruvbox = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -129,10 +124,20 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   tcomment_vim = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/tcomment_vim",
     url = "https://github.com/tomtom/tcomment_vim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

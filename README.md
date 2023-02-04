@@ -68,7 +68,8 @@ make nvim_plugins_rollback
 | `<leader> + nw`      | Disables line wrapping                                                                   |
 | `<leader> + jc`      | Opens the files finder on the **./app/controllers/** folder                              |
 | `<leader> + jm`      | Opens the files finder on the **./app/models/** folder                                   |
-| `control + f`        | Prompt the :Ag command to find texts in the current folder                               |
+| `<leader> + te`      | Opens telescope.nvim menu                                                                   |
+| `control + f`        | Opens a live_grep menu                                                                   |
 | `control + p`        | Opens the files finder on the root of the project                                        |
 | `control + b`        | Opens the list of active Buffers on the session                                          |
 | `<leader> + <space>` | Toggles the files tree                                                                   |

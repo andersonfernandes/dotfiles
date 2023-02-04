@@ -18,8 +18,11 @@ return require('packer').startup(function()
   use 'tomtom/tcomment_vim'
 
   -- Fuzzy Finder
-  use {'junegunn/fzf', dir = '~/.fzf', run = './install --all' }
-  use 'junegunn/fzf.vim'
+  use {'junegunn/fzf', dir = '~/.fzf', run = './install --all' } -- Only used on terminal
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Git
   use 'tpope/vim-fugitive'
