@@ -40,14 +40,9 @@ xnoremap("J", ":move '>+1<CR>gv-gv")
 -- Update tags file with ctags
 nnoremap("<leader>ut", ":! ctags -R -V  --exclude=.git --exclude=node_modules --exclude=tmp --exclude=vendor --exclude=public --exclude=coverage --exclude=railsboxdev *<CR>")
 
--- Jumpers
-nnoremap("<leader>jc", ":Files app/controllers<CR>")
-nnoremap("<leader>jm", ":Files app/models<CR>")
-nnoremap("<leader>jv", ":Files app/views/<CR>")
-nnoremap("<leader>js", ":Files spec/<CR>")
-
 -- telescope.nvim
 nnoremap('<leader>te', ':Telescope<CR>')
+nnoremap('lgw', ':lua require"telescope.builtin".grep_string({search = vim.fn.expand("<cword>")})<CR>')
 nmap('<leader>gc', ':Telescope git_branches<CR>')
 nnoremap('<c-f>', ':Telescope live_grep<CR>')
 nnoremap('<c-p>', ':Telescope find_files<CR>')
