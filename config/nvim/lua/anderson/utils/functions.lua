@@ -5,3 +5,7 @@ function toggle_git_status_cmd()
         vim.cmd(':Git')
     end
 end
+
+function live_grep_word()
+    require('telescope.builtin').grep_string({ search = vim.fn.expand('<cword>') })
+end
