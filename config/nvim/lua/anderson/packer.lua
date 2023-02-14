@@ -6,7 +6,10 @@ return require('packer').startup(function()
   -- Interface
   use 'folke/tokyonight.nvim'
   use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    commit = 'ba1778e061f25814bc5940be886a7f41d7d7736e',
+  }
   use 'nvim-lualine/lualine.nvim'
   use {
     'glepnir/dashboard-nvim',
