@@ -1,7 +1,7 @@
 -- lualine.nvim
 require('lualine').setup {
   options = {
-    theme = 'gruvbox-material',
+    theme = 'tokyonight',
     refresh = {
       statusline = 1000,
       tabline = 1000,

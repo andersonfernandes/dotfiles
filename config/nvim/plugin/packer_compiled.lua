@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf",
     url = "https://github.com/junegunn/fzf"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -149,15 +144,15 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-illuminate"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-illuminate",
-    url = "https://github.com/RRethy/vim-illuminate"
   },
   ["vim-javascript"] = {
     loaded = true,
@@ -168,11 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
     url = "https://github.com/maxmellon/vim-jsx-pretty"
-  },
-  ["vim-polyglot"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/vim-polyglot",
-    url = "https://github.com/sheerun/vim-polyglot"
   },
   ["vim-rails"] = {
     loaded = true,

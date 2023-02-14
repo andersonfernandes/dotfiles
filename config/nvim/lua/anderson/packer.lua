@@ -4,7 +4,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
 
   -- Interface
-  use 'morhetz/gruvbox'
+  use 'folke/tokyonight.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'nvim-lualine/lualine.nvim'
@@ -20,7 +20,6 @@ return require('packer').startup(function()
   }
 
   -- Editing
-  use 'RRethy/vim-illuminate'
   use 'tomtom/tcomment_vim'
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -48,7 +47,6 @@ return require('packer').startup(function()
     'neoclide/coc.nvim',
     branch = 'release'
   }
-  use 'sheerun/vim-polyglot'
   use 'honza/vim-snippets'
 
   -- Ruby
