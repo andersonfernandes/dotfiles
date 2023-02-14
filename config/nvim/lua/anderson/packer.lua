@@ -22,9 +22,17 @@ return require('packer').startup(function()
   -- Editing
   use 'RRethy/vim-illuminate'
   use 'tomtom/tcomment_vim'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
   -- Fuzzy Finder
-  use {'junegunn/fzf', dir = '~/.fzf', run = './install --all' } -- Only used on terminal
+  use {
+    'junegunn/fzf', -- Only used on terminal
+    dir = '~/.fzf',
+    run = './install --all'
+  }
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -36,7 +44,10 @@ return require('packer').startup(function()
 
   -- Development misc
   use 'dense-analysis/ale'
-  use { 'neoclide/coc.nvim', branch = 'release' }
+  use {
+    'neoclide/coc.nvim',
+    branch = 'release'
+  }
   use 'sheerun/vim-polyglot'
   use 'honza/vim-snippets'
 
