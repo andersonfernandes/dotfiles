@@ -7,7 +7,9 @@ require('nvim-treesitter.configs').setup {
     'ruby',
     'javascript',
     'gitcommit',
-    'json'
+    'json',
+    'markdown',
+    'markdown_inline'
   },
 
   sync_install = true,
