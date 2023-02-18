@@ -43,6 +43,10 @@ return require('packer').startup(function()
   -- Git
   use 'tpope/vim-fugitive'
   use 'mhinz/vim-signify'
+  use {
+    'sindrets/diffview.nvim',
+    requires = 'nvim-lua/plenary.nvim'
+  }
 
   -- Development misc
   use 'dense-analysis/ale'

@@ -52,8 +52,6 @@ nmap('<leader>tt', ':TestFile -strategy=neovim<CR>', { silent = true })
 nmap('<leader>tl', ':TestNearest -strategy=neovim<CR>', { silent = true })
 
 -- vim-fugitive
-nmap('<leader>gh', ':diffget //2<CR>')
-nmap('<leader>gl', ':diffget //3<CR>')
 nnoremap('<leader>gs', ':lua toggle_git_status_cmd()<CR>', { silent = true })
 nnoremap('<leader>gp', ':Git push<CR>')
 nnoremap('<leader>gpf', ':Git push --force<CR>')
