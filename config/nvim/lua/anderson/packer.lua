@@ -21,6 +21,7 @@ return require('packer').startup(function()
       {'MunifTanjim/nui.nvim'}
     }
   }
+  use 'lewis6991/impatient.nvim'
 
   -- Editing
   use 'tomtom/tcomment_vim'

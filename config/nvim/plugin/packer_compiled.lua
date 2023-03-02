@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/fzf",
     url = "https://github.com/junegunn/fzf"
   },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/lualine.nvim",
