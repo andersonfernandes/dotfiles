@@ -25,10 +25,6 @@ return require('packer').startup(function()
 
   -- Editing
   use 'tomtom/tcomment_vim'
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
 
   -- Fuzzy Finder
   use {
