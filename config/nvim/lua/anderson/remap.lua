@@ -5,8 +5,6 @@ local nnoremap = keymap.nnoremap
 local xnoremap = keymap.xnoremap
 local nmap = keymap.nmap
 
-nnoremap("<Leader>ev", ":vsplit ~/.config/nvim/init.lua<CR>")
-
 nnoremap("Q", "<nop>", { silent = true })
 nmap('<esc>', ':noh <CR>', { silent = true })
 
@@ -46,10 +44,6 @@ nnoremap('<c-b>', ':Telescope buffers<CR>')
 -- nvim-tree.lua
 nnoremap("<leader><space>", ":NvimTreeToggle<CR>")
 nnoremap("<leader>f", ":NvimTreeFindFile<CR>")
-
--- vim-test
-nmap('<leader>tt', ':TestFile -strategy=neovim<CR>', { silent = true })
-nmap('<leader>tl', ':TestNearest -strategy=neovim<CR>', { silent = true })
 
 -- vim-fugitive
 nnoremap('<leader>gs', ':lua toggle_git_status_cmd()<CR>', { silent = true })
