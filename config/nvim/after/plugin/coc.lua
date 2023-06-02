@@ -12,7 +12,8 @@ vim.g.coc_global_extensions = {
   'coc-styled-components',
   'coc-python',
   'coc-lua',
-  'coc-pairs'
+  'coc-pairs',
+  'coc-go'
 }
 
 vim.cmd([[
