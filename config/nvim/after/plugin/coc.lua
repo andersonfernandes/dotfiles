@@ -5,7 +5,7 @@ vim.g.coc_global_extensions = {
   'coc-elixir',
   'coc-json',
   'coc-tsserver',
-  'coc-vetur',
+  'coc-prettier',
   'coc-yaml',
   'coc-html',
   'coc-snippets',
@@ -31,3 +31,6 @@ vim.cmd([[
 ]])
 
 vim.g.coc_snippet_next = '<tab>'
+
+-- coc-prettier cmd
+vim.api.nvim_create_user_command('Prettier', ':CocCommand prettier.forceFormatDocument', { nargs = 0 })

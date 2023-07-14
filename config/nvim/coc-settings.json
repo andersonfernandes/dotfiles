@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
   "diagnostic.displayByAle": true,
-  "coc.preferences.colorSupport": true
+  "coc.preferences.colorSupport": true,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
 }
