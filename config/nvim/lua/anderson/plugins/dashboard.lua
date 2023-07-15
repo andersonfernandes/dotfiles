@@ -8,19 +8,19 @@ config.shortcut = {
         key = 'n'
     },
     {
-        desc = '   Update ',
+        desc = '⟲  Update ',
         action = 'PackerSync',
         group = '@string',
         key = 'u'
     },
     {
-        desc = ' dotfiles',
+        desc = '  dotfiles',
         group = '@string',
         action = 'vsplit ~/.config/nvim/init.lua',
         key = 'd',
     },
     {
-        desc = '   Quit ',
+        desc = '⤫  Quit ',
         action = 'q!',
         group = '@macro',
         key = 'q'
