@@ -1,4 +1,7 @@
 require('telescope').setup{
+  defaults = {
+    prompt_prefix = '  '
+  },
   pickers = {
     buffers = {
       ignore_current_buffer = true,

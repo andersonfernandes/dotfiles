@@ -2,7 +2,7 @@ require('fine-cmdline').setup{
     cmdline = {
         enable_keymaps = true,
         smart_history = true,
-        prompt = ' '
+        prompt = '  '
     },
     popup = {
         position = {
