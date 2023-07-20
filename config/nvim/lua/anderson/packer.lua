@@ -25,6 +25,19 @@ return require('packer').startup(function()
 
   -- Editing
   use 'tomtom/tcomment_vim'
+  use {
+    'tzachar/highlight-undo.nvim',
+    config = function()
+      require('highlight-undo').setup({})
+    end
+  }
+  use {
+    'folke/todo-comments.nvim',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('todo-comments').setup{}
+    end
+  }
 
   -- Fuzzy Finder
   use {

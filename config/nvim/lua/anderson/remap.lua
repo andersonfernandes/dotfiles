@@ -57,3 +57,6 @@ nmap('<leader>rn', '<Plug>(coc-rename)')
 
 -- fine-cmdline
 nnoremap(':', '<cmd>FineCmdline<CR>')
+
+-- todo-comments.nvim
+nnoremap('<leader>td', ':TodoTelescope<CR>')
