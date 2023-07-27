@@ -22,6 +22,10 @@ return require('packer').startup(function()
     }
   }
   use 'lewis6991/impatient.nvim'
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
   -- Editing
   use 'tomtom/tcomment_vim'
@@ -59,7 +63,6 @@ return require('packer').startup(function()
   }
 
   -- Development misc
-  use 'dense-analysis/ale'
   use {
     'neoclide/coc.nvim',
     branch = 'release'
@@ -70,8 +73,4 @@ return require('packer').startup(function()
   use 'vim-ruby/vim-ruby'
   use 'tpope/vim-rails'
   use 'ngmy/vim-rubocop'
-
-  -- Javascript/Typescript
-  use 'pangloss/vim-javascript'
-  use 'maxmellon/vim-jsx-pretty'
 end)
