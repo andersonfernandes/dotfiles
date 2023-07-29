@@ -60,3 +60,6 @@ nnoremap(':', '<cmd>FineCmdline<CR>')
 
 -- todo-comments.nvim
 nnoremap('<leader>td', ':TodoTelescope<CR>')
+
+-- ChatGPT.nvim
+nnoremap('<leader>gpt', ':ChatGPT<CR>')
