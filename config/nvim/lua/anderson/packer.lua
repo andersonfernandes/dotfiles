@@ -73,14 +73,4 @@ return require('packer').startup(function()
   use 'vim-ruby/vim-ruby'
   use 'tpope/vim-rails'
   use 'ngmy/vim-rubocop'
-
-  -- Chat GPT
-  use({
-    "jackMort/ChatGPT.nvim",
-    requires = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim"
-    }
-  })
 end)

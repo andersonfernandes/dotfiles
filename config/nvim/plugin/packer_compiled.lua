@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["ChatGPT.nvim"] = {
-    loaded = true,
-    path = "/home/anderson/.local/share/nvim/site/pack/packer/start/ChatGPT.nvim",
-    url = "https://github.com/jackMort/ChatGPT.nvim"
-  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/anderson/.local/share/nvim/site/pack/packer/start/coc.nvim",
