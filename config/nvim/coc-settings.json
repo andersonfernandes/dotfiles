@@ -1,5 +1,11 @@
 {
   "suggest.noselect": false,
   "coc.preferences.colorSupport": true,
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "tsserver.npm": "/usr/bin/npm"
 }
