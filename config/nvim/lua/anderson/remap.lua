@@ -6,7 +6,7 @@ local xnoremap = keymap.xnoremap
 local nmap = keymap.nmap
 
 nnoremap("Q", "<nop>", { silent = true })
-nmap('<esc>', ':noh <CR>', { silent = true })
+-- nmap('<esc>', ':noh <CR>', { silent = true })
 
 -- Copy current file relative path
 nnoremap('<leader>c', ':let @+=fnamemodify(expand("%"), ":~:.")<CR>', { silent = true })
